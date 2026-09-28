@@ -85,7 +85,7 @@ corrplot(h3_corr, method = "ellipse", type = "lower",
 
 # H3A_ICAPmg and aa_ca
 
-ggplot(soil_clean, aes(aa_mg, h3a_icap_mg)) +
+ggplot(soil_clean, aes(m3_s, h3a_icaps)) +
   geom_point(size = 0.8) +
   stat_poly_line() +
   stat_poly_eq(use_label(c("eq", "P", "adj.R2")),
