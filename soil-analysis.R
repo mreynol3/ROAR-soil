@@ -147,3 +147,12 @@ soil_name <- c(
   'x15n_acidified' = 'Nitrogen-15 Isotopes',
   'percent_n_unacidified' = '% N Unacidified'
 )
+
+# PEATS CREEK BY PALMER HUC 12 : 102500170501
+
+library(nhdplusTools)
+library(sf)
+
+# Pull a single HUC12
+peats <- get_huc(id = "102500170501", type = "huc12")
+
